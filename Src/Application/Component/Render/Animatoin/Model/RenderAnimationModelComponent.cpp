@@ -243,27 +243,6 @@ void RenderAnimationModelComponent::ImGuiPrefabDataInspector()
 		}
 	}
 
-	if (ImGui::CollapsingHeader("Asset FilePath"))
-	{
-		// パスが変更されたらモデルを上書き
-		if (auto commonCoreRender = commonCoreRenderModelCache_->GetCommonCoreRenderCache().lock())
-		{
-			if (auto commonCoreAssetFilePath = commonCoreRender->GetCommonCoreAssetFilePathCache().lock())
-			{
-				commonCoreAssetFilePath->ImGuiPrefabDataInspector();
-
-				if (commonCoreAssetFilePath->GetHasPathChanged())
-				{
-					if (!m_modelWork)
-					{
-						m_modelWork = std::make_shared<KdModelWork>();
-					}
-
-					m_modelWork->SetModelData(commonCoreAssetFilePath->GetAssetFilePath());
-				}
-			}
-		}
-	}
 }
 
 void RenderAnimationModelComponent::DeserializeSpawnData(const nlohmann::json& Json)

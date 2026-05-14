@@ -21,6 +21,11 @@
             "PrefabName": "EnergyBlade"
         },
         {
+            "CategoryType": 32,
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Map\\BackGround\\SkySphere\\SkySphere.json",
+            "PrefabName": "MorningSkySphere"
+        },
+        {
             "CategoryType": 4,
             "PrefabFilePath": "Asset\\Data\\Prefab\\Actor\\Enemy\\Test\\TestEnemy.json",
             "PrefabName": "TestEnemy"

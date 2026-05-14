@@ -27,6 +27,10 @@ void CommonCoreRender::PostLoadInit(std::shared_ptr<GameObject> Owner)
 void CommonCoreRender::ImGuiPrefabDataInspector()
 {
 	ImGui::ColorEdit4("Color" , &m_color.x);
+
+	if (!m_commonCoreAssetFilePath) { return; }
+
+	m_commonCoreAssetFilePath->ImGuiPrefabDataInspector();
 }
 
 void CommonCoreRender::DeserializePrefabData(const nlohmann::json& Json)
