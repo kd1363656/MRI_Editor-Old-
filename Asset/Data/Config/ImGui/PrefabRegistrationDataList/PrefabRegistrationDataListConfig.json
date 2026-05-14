@@ -16,14 +16,14 @@
             "PrefabName": "Grass_1"
         },
         {
-            "CategoryType": 1024,
-            "PrefabFilePath": "Asset\\Data\\Prefab\\Weapon\\EnergyBlade\\EnergyBlade.json",
-            "PrefabName": "EnergyBlade"
-        },
-        {
             "CategoryType": 32,
             "PrefabFilePath": "Asset\\Data\\Prefab\\Map\\BackGround\\SkySphere\\SkySphere.json",
             "PrefabName": "MorningSkySphere"
+        },
+        {
+            "CategoryType": 1024,
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Weapon\\EnergyBlade\\EnergyBlade.json",
+            "PrefabName": "EnergyBlade"
         },
         {
             "CategoryType": 4,

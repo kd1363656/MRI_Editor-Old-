@@ -17,6 +17,10 @@
             "PrefabName": "EnergyBlade"
         },
         {
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Map\\BackGround\\SkySphere\\SkySphere.json",
+            "PrefabName": "MorningSkySphere"
+        },
+        {
             "PrefabFilePath": "Asset\\Data\\Prefab\\Actor\\Enemy\\Test\\TestEnemy.json",
             "PrefabName": "TestEnemy"
         }
