@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F06FE08-688B-490A-AB0E-7A85CF6B8649}</ProjectGuid>
+    <RootNamespace>BaseFramework</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\;src;..\Library;..\Library\DirectXTK\Inc;..\Library\DirectXTex\DirectXTex;..\Library\tinygltf;..\Library\imgui;..\Library\Effekseer\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ForcedIncludeFiles>Pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/nodefaultlib:"LIBCMT"
+
+ %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\Library\DirectXTK\Lib\$(Platform)\$(Configuration)\Audio;..\Library\DirectXTK\Lib\$(Platform)\$(Configuration);..\Library\DirectXTex\Lib\$(Platform)\$(Configuration);..\Library\Effekseer\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <FxCompile>
+      <ShaderType>
+      </ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>
+      </ObjectFileOutput>
+      <HeaderFileOutput>%(RelativeDir)\%(Filename).shaderInc</HeaderFileOutput>
+      <VariableName>compiledBuffer</VariableName>
+      <EnableDebuggingInformation>true</EnableDebuggingInformation>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\;src;..\Library;..\Library\DirectXTK\Inc;..\Library\DirectXTex\DirectXTex;..\Library\tinygltf;..\Library\imgui;..\Library\Effekseer\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ForcedIncludeFiles>Pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/nodefaultlib:"LIBCMT"
+
+ %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+      <AdditionalLibraryDirectories>..\Library\DirectXTK\Lib\$(Platform)\$(Configuration)\Audio;..\Library\DirectXTK\Lib\$(Platform)\$(Configuration);..\Library\DirectXTex\Lib\$(Platform)\$(Configuration);..\Library\Effekseer\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <FxCompile>
+      <ShaderType>
+      </ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>
+      </ObjectFileOutput>
+      <HeaderFileOutput>%(RelativeDir)\%(Filename).shaderInc</HeaderFileOutput>
+      <VariableName>compiledBuffer</VariableName>
+      <EnableDebuggingInformation>true</EnableDebuggingInformation>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\;src;..\Library;..\Library\DirectXTK\Inc;..\Library\DirectXTex\DirectXTex;..\Library\tinygltf;..\Library\imgui;..\Library\Effekseer\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <ForcedIncludeFiles>Pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>..\Library\DirectXTK\Lib\$(Platform)\$(Configuration)\Audio;..\Library\DirectXTK\Lib\$(Platform)\$(Configuration);..\Library\DirectXTex\Lib\$(Platform)\$(Configuration);..\Library\Effekseer\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <FxCompile>
+      <ShaderType>
+      </ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>
+      </ObjectFileOutput>
+      <HeaderFileOutput>%(RelativeDir)\%(Filename).shaderInc</HeaderFileOutput>
+      <VariableName>compiledBuffer</VariableName>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>.\;src;..\Library;..\Library\DirectXTK\Inc;..\Library\DirectXTex\DirectXTex;..\Library\tinygltf;..\Library\imgui;..\Library\Effekseer\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <ForcedIncludeFiles>Pch.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <AdditionalLibraryDirectories>..\Library\DirectXTK\Lib\$(Platform)\$(Configuration)\Audio;..\Library\DirectXTK\Lib\$(Platform)\$(Configuration);..\Library\DirectXTex\Lib\$(Platform)\$(Configuration);..\Library\Effekseer\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <FxCompile>
+      <ShaderType>
+      </ShaderType>
+    </FxCompile>
+    <FxCompile>
+      <ShaderModel>5.0</ShaderModel>
+      <ObjectFileOutput>
+      </ObjectFileOutput>
+      <HeaderFileOutput>%(RelativeDir)\%(Filename).shaderInc</HeaderFileOutput>
+      <VariableName>compiledBuffer</VariableName>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Library\imgui\imconfig.h" />
+    <ClInclude Include="..\Library\imgui\imgui.h" />
+    <ClInclude Include="..\Library\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\Library\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\Library\imgui\imgui_internal.h" />
+    <ClInclude Include="..\Library\imgui\imgui_stdlib.h" />
+    <ClInclude Include="..\Library\imgui\imnodes.h" />
+    <ClInclude Include="..\Library\imgui\imnodes_internal.h" />
+    <ClInclude Include="..\Library\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\Library\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\Library\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\Library\imgui\ja_glyph_ranges.h" />
+    <ClInclude Include="..\Library\strconv.h" />
+    <ClInclude Include="..\Library\tinygltf\json.hpp" />
+    <ClInclude Include="..\Library\tinygltf\stb_image.h" />
+    <ClInclude Include="..\Library\tinygltf\stb_image_write.h" />
+    <ClInclude Include="..\Library\tinygltf\tiny_gltf.h" />
+    <ClInclude Include="Src\Application\CommonCore\AssetFilePath\CommonCoreAssetFilePath.h" />
+    <ClInclude Include="Src\Application\CommonCore\CommonCoreBase.h" />
+    <ClInclude Include="Src\Application\CommonCore\GUIDBinder\CommonCoreGUIDBinder.h" />
+    <ClInclude Include="Src\Application\CommonCore\Interpolator\CommonCoreInterpolator.h" />
+    <ClInclude Include="Src\Application\CommonCore\Move\CommonCoreMove.h" />
+    <ClInclude Include="Src\Application\CommonCore\Move\Input\CommonCoreMoveInput.h" />
+    <ClInclude Include="Src\Application\CommonCore\Physics\Collision\CommonCorePhysicsCollision.h" />
+    <ClInclude Include="Src\Application\CommonCore\Render\CommonCoreRender.h" />
+    <ClInclude Include="Src\Application\CommonCore\Render\Model\CommonCoreRenderModel.h" />
+    <ClInclude Include="Src\Application\CommonCore\Rotation\CommonCoreRotation.h" />
+    <ClInclude Include="Src\Application\CommonCore\Rotation\Input\Smooth\CommonCoreRotationInputSmooth.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BehaviorTreeComponent.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BlackBoard\BTBlackBoard.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\BTBlackBoardDataBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\CalcDistanceToTarget\BTBlackBoardCalcDistanceToTargetData.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\CalcVectorToTarget\BTBlackBoardCalcVectorToTargetData.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\FinishedRandomMove\BTBlackBoardFinishedRandomMoveData.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\IBTBlackBoardData.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\TargetTransformComponentCache\BTBlackBoardTargetTransformComponentCacheData.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Branch\BTNodeBranchBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Branch\WithinDistance\BTNodeWithinDistanceBranch.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\BTNodeBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Composite\BTNodeCompositeBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Composite\Selector\BTNodeCompositeSelector.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Composite\Sequence\BTNodeCompositeSequence.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Decorator\BTNodeDecoratorBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Decorator\Inverter\BTNodeDecoratorInverterBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Decorator\Wait\BTNodeDecoratorWait.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Root\BTNodeRoot.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Task\AlwaysPass\BTNodeTaskAlwaysPassBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Task\AlwaysPass\CalcVectorToTarget\BTNodeTaskAlwaysPassCalcVectorToTarget.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Task\AlwaysPass\Move\Run\LockOn\BTNodeTaskAlwaysPassMoveRunLockOn.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Task\BTNodeTaskBase.h" />
+    <ClInclude Include="Src\Application\Component\BehaviorTree\Node\Task\Move\Random\LockOn\BTNodeTaskMoveRandomLockOn.h" />
+    <ClInclude Include="Src\Application\Component\Camera\CameraComponent.h" />
+    <ClInclude Include="Src\Application\Component\Combat\CombatComponent.h" />
+    <ClInclude Include="Src\Application\Component\ComponentBase.h" />
+    <ClInclude Include="Src\Application\Component\Input\Player\InputPlayerComponent.h" />
+    <ClInclude Include="Src\Application\Component\Move\Input\Action\MoveInputActionComponent.h" />
+    <ClInclude Include="Src\Application\Component\Move\Input\BasedOnTarget\MoveInputBasedOnTargetComponent.h" />
+    <ClInclude Include="Src\Application\Component\Physics\Collider\PhysicsColliderComponent.h" />
+    <ClInclude Include="Src\Application\Component\Physics\Collision\Ray\PhysicsCollisionRayComponent.h" />
+    <ClInclude Include="Src\Application\Component\Physics\Collision\Sphere\PhysicsCollisionSphereComponent.h" />
+    <ClInclude Include="Src\Application\Component\Physics\DebugWire\PhysicsDebugWireComponent.h" />
+    <ClInclude Include="Src\Application\Component\Physics\Gravity\PhysicsGravityComponent.h" />
+    <ClInclude Include="Src\Application\Component\Render\Animatoin\Model\Clip\RenderAnimationModelClip.h" />
+    <ClInclude Include="Src\Application\Component\Render\Animatoin\Model\RenderAnimationModelComponent.h" />
+    <ClInclude Include="Src\Application\Component\Render\Model\RenderModelComponentBase.h" />
+    <ClInclude Include="Src\Application\Component\Render\ShaderParam\AlphaDither\RenderShaderParamAlphaDither.h" />
+    <ClInclude Include="Src\Application\Component\Render\ShaderParam\RenderShaderParamBase.h" />
+    <ClInclude Include="Src\Application\Component\Render\Static\Model\RenderStaticModelComponent.h" />
+    <ClInclude Include="Src\Application\Component\Render\Static\Sprite\RenderStaticSpriteComponent.h" />
+    <ClInclude Include="Src\Application\Component\Rotation\Input\BasedOnTarget\Instant\RotationInputBasedOnTargetInstantComponent.h" />
+    <ClInclude Include="Src\Application\Component\Rotation\Input\BasedOnTarget\Smooth\RotationInputBasedOnTargetSmoothComponent.h" />
+    <ClInclude Include="Src\Application\Component\Rotation\Input\Mouse\RotationInputMouseComponent.h" />
+    <ClInclude Include="Src\Application\Component\SpringArm\SpringArmComponent.h" />
+    <ClInclude Include="Src\Application\Component\Transform\Strategy\CreateLocalSRT\TransformStrategyCreateLocalSRT.h" />
+    <ClInclude Include="Src\Application\Component\Transform\Strategy\CreateLocalSTRParentSRT\TransformStrategyCreateLocalSTRParentSRT.h" />
+    <ClInclude Include="Src\Application\Component\Transform\TransformComponent.h" />
+    <ClInclude Include="Src\Application\Factory\BehaviorTree\BlackBoardData\BTBlackBoardDataFactory.h" />
+    <ClInclude Include="Src\Application\Factory\BehaviorTree\Node\BTNodeFactory.h" />
+    <ClInclude Include="Src\Application\Factory\Comopnent\ComponentFactory.h" />
+    <ClInclude Include="Src\Application\Factory\GenericFactoryBase.h" />
+    <ClInclude Include="Src\Application\Factory\Modifier\Interpolator\InterpolatorFactory.h" />
+    <ClInclude Include="Src\Application\Factory\Notify\Component\NotifyToComponentFactory.h" />
+    <ClInclude Include="Src\Application\Factory\RenderShaderParam\RenderShaderParamFactory.h" />
+    <ClInclude Include="Src\Application\Factory\Strategy\StrategyFactory.h" />
+    <ClInclude Include="Src\Application\FileSaveAndLoad\FileSaveAndLoadBase.h" />
+    <ClInclude Include="Src\Application\FileSaveAndLoad\GameObject\GameObjectFileSaveAndLoad.h" />
+    <ClInclude Include="Src\Application\FileSaveAndLoad\Prefab\PrefabFileSaveAndLoad.h" />
+    <ClInclude Include="Src\Application\GameObject\GameObject.h" />
+    <ClInclude Include="Src\Application\GUID\BehaviorTree\GUIDBehaviorTreeManager.h" />
+    <ClInclude Include="Src\Application\GUID\GameObject\GUIDGameObjectManager.h" />
+    <ClInclude Include="Src\Application\GUID\GUIDManagerBase.h" />
+    <ClInclude Include="Src\Application\main.h" />
+    <ClInclude Include="Src\Application\Modifier\Interporator\Hermite\HermiteInterpolatorModifier.h" />
+    <ClInclude Include="Src\Application\Modifier\Interporator\InterpolatorModifierBase.h" />
+    <ClInclude Include="Src\Application\Observer\Component\ComponentObserver.h" />
+    <ClInclude Include="Src\Application\Observer\Component\Notify\Keep\KeepNotifyToComponent.h" />
+    <ClInclude Include="Src\Application\Observer\Component\Notify\Moment\MomentNotifyToComponent.h" />
+    <ClInclude Include="Src\Application\Observer\Component\Notify\NotifyToComponentBase.h" />
+    <ClInclude Include="Src\Application\Observer\Global\EventChannel\EventChannel.h" />
+    <ClInclude Include="Src\Application\Observer\Global\Event\GlobalObserverEvent.h" />
+    <ClInclude Include="Src\Application\Observer\Global\GlobalObserver.h" />
+    <ClInclude Include="Src\Application\PlayerInputConfig\PlayerInputConfig.h" />
+    <ClInclude Include="Src\Application\Resource\Prefab\PrefabController.h" />
+    <ClInclude Include="Src\Application\Resource\Prefab\Prefab.h" />
+    <ClInclude Include="Src\Application\Resource\ResourceController.h" />
+    <ClInclude Include="Src\Application\Scene\BaseScene\BaseScene.h" />
+    <ClInclude Include="Src\Application\Scene\Changer\SceneChanger.h" />
+    <ClInclude Include="Src\Application\Scene\GameScene\GameScene.h" />
+    <ClInclude Include="Src\Application\Scene\SceneManager.h" />
+    <ClInclude Include="Src\Application\Scene\TitleScene\TitleScene.h" />
+    <ClInclude Include="Src\Application\Strategy\IStrategy.h" />
+    <ClInclude Include="Src\Application\Tag\ComponentEvent\ComponentEventTag.h" />
+    <ClInclude Include="Src\Application\Tag\TagBase.h" />
+    <ClInclude Include="Src\Application\Tag\TagRegistry.h" />
+    <ClInclude Include="Src\Application\Utility\BehaviorTree\BTUtility.h" />
+    <ClInclude Include="Src\Application\Utility\BitShift\BitShiftUtility.h" />
+    <ClInclude Include="Src\Application\Utility\Common\CommonConstant.h" />
+    <ClInclude Include="Src\Application\Utility\Common\CommonEnum.h" />
+    <ClInclude Include="Src\Application\Utility\Common\CommonStruct.h" />
+    <ClInclude Include="Src\Application\Utility\Component\ComponentUtility.h" />
+    <ClInclude Include="Src\Application\Utility\ImGui\ImGuiUtility.h" />
+    <ClInclude Include="Src\Application\Utility\Include\IncludeStrategyUtility.h" />
+    <ClInclude Include="Src\Application\Utility\Input\InputUtility.h" />
+    <ClInclude Include="Src\Application\Utility\Json\JsonUtility.h" />
+    <ClInclude Include="Src\Application\Utility\Singleton\SingletonBase.h" />
+    <ClInclude Include="Src\Application\Utility\Strategy\StrategyUtility.h" />
+    <ClInclude Include="Src\Application\Utility\String\StringUtility.h" />
+    <ClInclude Include="Src\Application\Utility\ToValue\ToValueUtility.h" />
+    <ClInclude Include="Src\Framework\Direct3D\KdMaterial.h" />
+    <ClInclude Include="Src\Framework\Direct3D\Polygon\KdPolygon.h" />
+    <ClInclude Include="Src\Framework\Direct3D\Polygon\KdSquarePolygon.h" />
+    <ClInclude Include="Src\Framework\Direct3D\Polygon\KdTrailPolygon.h" />
+    <ClInclude Include="Src\Framework\Effekseer\KdEffekseerManager.h" />
+    <ClInclude Include="Src\Framework\GameObject\KdGameObject.h" />
+    <ClInclude Include="Src\Framework\GameObject\KdGameObjectFactory.h" />
+    <ClInclude Include="Src\Framework\Input\KdInput.h" />
+    <ClInclude Include="Src\Framework\Math\KdCollider.h" />
+    <ClInclude Include="Src\Framework\Math\KdEasing.h" />
+    <ClInclude Include="Src\Framework\KdFramework.h" />
+    <ClInclude Include="Src\Framework\Audio\KdAudio.h" />
+    <ClInclude Include="Src\Framework\Direct3D\KdCamera.h" />
+    <ClInclude Include="src\Framework\Direct3D\KdDirect3D.h" />
+    <ClInclude Include="Src\Framework\Direct3D\KdGLTFLoader.h" />
+    <ClInclude Include="src\Framework\Direct3D\KdBuffer.h" />
+    <ClInclude Include="src\Framework\Direct3D\KdMesh.h" />
+    <ClInclude Include="Src\Framework\Direct3D\KdModel.h" />
+    <ClInclude Include="src\Framework\Direct3D\KdTexture.h" />
+    <ClInclude Include="Src\Framework\Math\KdUVAnimation.h" />
+    <ClInclude Include="Src\Framework\Shader\KdAmbientController.h" />
+    <ClInclude Include="Src\Framework\Shader\KdRenderTargetChange.h" />
+    <ClInclude Include="Src\Framework\Shader\StandardShader\KdStandardShader.h" />
+    <ClInclude Include="Src\Framework\Utility\Debug\KdDebugWireFrame.h" />
+    <ClInclude Include="Src\Framework\Utility\KdDataStorage.h" />
+    <ClInclude Include="Src\Framework\Utility\KdCSVData.h" />
+    <ClInclude Include="Src\Framework\Utility\KdDebugGUI.h" />
+    <ClInclude Include="Src\Framework\Utility\KdFPSController.h" />
+    <ClInclude Include="Src\Framework\Utility\KdRandom.h" />
+    <ClInclude Include="src\Pch.h" />
+    <ClInclude Include="Src\Framework\Math\KdAnimation.h" />
+    <ClInclude Include="Src\Framework\Math\KdCollision.h" />
+    <ClInclude Include="Src\Framework\Shader\KdShaderManager.h" />
+    <ClInclude Include="Src\Framework\Shader\PostProcessShader\KdPostProcessShader.h" />
+    <ClInclude Include="Src\Framework\Shader\SpriteShader\KdSpriteShader.h" />
+    <ClInclude Include="src\Framework\Utility\KdUtility.h" />
+    <ClInclude Include="src\Framework\Window\KdWindow.h" />
+    <ClInclude Include="Src\System\Calculation\Calculation.h" />
+    <ClInclude Include="Src\System\Calculation\Random\CalculationRandom.h" />
+    <ClInclude Include="Src\System\FileSystem\FileSystem.h" />
+    <ClInclude Include="Src\System\ImGui\Config\ImGuiConfigBase.h" />
+    <ClInclude Include="Src\System\ImGui\Config\PrefabRegistrationDataList\PrefabRegistrationDataListImGuiConfig.h" />
+    <ClInclude Include="Src\System\ImGui\Config\SceneView\SceneViewImGuiConfig.h" />
+    <ClInclude Include="Src\System\ImGui\ImGuiManager.h" />
+    <ClInclude Include="Src\System\ImGui\Window\BehaviorTree\BehaviorTreeImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\GUID\GUIDImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\Hierarchy\HierarchyImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\ImGuiWindowBase.h" />
+    <ClInclude Include="Src\System\ImGui\Window\InputCheck\InputCheckImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\Inspector\Config\PrefabRegistrationDataList\PrefabRegistrationDataListInspectorImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\Inspector\PrefabData\PrefabDataInspectorImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\Inspector\PrefabData\PrefabSceneFilePathListInspectorImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\Inspector\SpawnData\SpawnDataInspectorImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\MenuBar\MenuBarImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\SceneView\SceneViewImGuiWindow.h" />
+    <ClInclude Include="Src\System\ImGui\Window\TerrainCreate\TerrainCreateImGuiWindow.h" />
+    <ClInclude Include="Src\System\Input\RawInputManager.h" />
+    <ClInclude Include="Src\System\StaticID\StaticID.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Library\imgui\imgui.cpp" />
+    <ClCompile Include="..\Library\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\Library\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\Library\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="..\Library\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\Library\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="..\Library\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\Library\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\Library\imgui\imnodes.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\AssetFilePath\CommonCoreAssetFilePath.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Interpolator\CommonCoreInterpolator.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Move\CommonCoreMove.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Move\Input\CommonCoreMoveInput.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Physics\Collision\CommonCorePhysicsCollision.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Render\CommonCoreRender.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Render\Model\CommonCoreRenderModel.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Rotation\CommonCoreRotation.cpp" />
+    <ClCompile Include="Src\Application\CommonCore\Rotation\Input\Smooth\CommonCoreRotationInputSmooth.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\BehaviorTreeComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\BlackBoard\BTBlackBoard.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\FinishedRandomMove\BTBlackBoardFinishedRandomMoveData.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\BlackBoard\Data\TargetTransformComponentCache\BTBlackBoardTargetTransformComponentCacheData.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Branch\BTNodeBranchBase.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Branch\WithinDistance\BTNodeWithinDistanceBranch.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\BTNodeBase.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Composite\BTNodeCompositeBase.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Composite\Selector\BTNodeCompositeSelector.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Composite\Sequence\BTNodeCompositeSequence.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Decorator\BTNodeDecoratorBase.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Decorator\Inverter\BTNodeDecoratorInverterBase.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Decorator\Wait\BTNodeDecoratorWait.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Root\BTNodeRoot.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Task\AlwaysPass\CalcVectorToTarget\BTNodeTaskAlwaysPassCalcVectorToTarget.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Task\AlwaysPass\Move\Run\LockOn\BTNodeTaskAlwaysPassMoveRunLockOn.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Task\BTNodeTaskBase.cpp" />
+    <ClCompile Include="Src\Application\Component\BehaviorTree\Node\Task\Move\Random\LockOn\BTNodeTaskMoveRandomLockOn.cpp" />
+    <ClCompile Include="Src\Application\Component\Camera\CameraComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Combat\CombatComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Input\Player\InputPlayerComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Move\Input\Action\MoveInputActionComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Move\Input\BasedOnTarget\MoveInputBasedOnTargetComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Physics\Collider\PhysicsColliderComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Physics\Collision\Ray\PhysicsCollisionRayComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Physics\Collision\Sphere\PhysicsCollisionSphereComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Physics\DebugWire\PhysicsDebugWireComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Physics\Gravity\PhysicsGravityComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Render\Animatoin\Model\Clip\RenderAnimationModelClip.cpp" />
+    <ClCompile Include="Src\Application\Component\Render\Animatoin\Model\RenderAnimationModelComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Render\Model\RenderModelComponentBase.cpp" />
+    <ClCompile Include="Src\Application\Component\Render\ShaderParam\AlphaDither\RenderShaderParamAlphaDither.cpp" />
+    <ClCompile Include="Src\Application\Component\Render\Static\Model\RenderStaticModelComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Render\Static\Sprite\RenderStaticSpriteComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Rotation\Input\BasedOnTarget\Instant\RotationInputBasedOnTargetInstantComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Rotation\Input\BasedOnTarget\Smooth\RotationInputBasedOnTargetSmoothComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Rotation\Input\Mouse\RotationInputMouseComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\SpringArm\SpringArmComponent.cpp" />
+    <ClCompile Include="Src\Application\Component\Transform\Strategy\CreateLocalSRT\TransformStrategyCreateLocalSRT.cpp" />
+    <ClCompile Include="Src\Application\Component\Transform\Strategy\CreateLocalSTRParentSRT\TransformStrategyCreateLocalSTRParentSRT.cpp" />
+    <ClCompile Include="Src\Application\Component\Transform\TransformComponent.cpp" />
+    <ClCompile Include="Src\Application\Factory\BehaviorTree\BlackBoardData\BTBlackBoardDataFactory.cpp" />
+    <ClCompile Include="Src\Application\Factory\BehaviorTree\Node\BTNodeFactory.cpp" />
+    <ClCompile Include="Src\Application\Factory\Comopnent\ComponentFactory.cpp" />
+    <ClCompile Include="Src\Application\Factory\Modifier\Interpolator\InterpolatorFactory.cpp" />
+    <ClCompile Include="Src\Application\Factory\Notify\Component\NotifyToComponentFactory.cpp" />
+    <ClCompile Include="Src\Application\Factory\RenderShaderParam\RenderShaderParamFactory.cpp" />
+    <ClCompile Include="Src\Application\FileSaveAndLoad\GameObject\GameObjectFileSaveAndLoad.cpp" />
+    <ClCompile Include="Src\Application\FileSaveAndLoad\Prefab\PrefabFileSaveAndLoad.cpp" />
+    <ClCompile Include="Src\Application\GameObject\GameObject.cpp" />
+    <ClCompile Include="Src\Application\GUID\GUIDManagerBase.cpp" />
+    <ClCompile Include="Src\Application\main.cpp" />
+    <ClCompile Include="Src\Application\Modifier\Interporator\Hermite\HermiteInterpolatorModifier.cpp" />
+    <ClCompile Include="Src\Application\Modifier\Interporator\InterpolatorModifierBase.cpp" />
+    <ClCompile Include="Src\Application\Observer\Component\ComponentObserver.cpp" />
+    <ClCompile Include="Src\Application\Observer\Component\Notify\Keep\KeepNotifyToComponent.cpp" />
+    <ClCompile Include="Src\Application\Observer\Component\Notify\Moment\MomentNotifyToComponent.cpp" />
+    <ClCompile Include="Src\Application\Observer\Component\Notify\NotifyToComponentBase.cpp" />
+    <ClCompile Include="Src\Application\Observer\Global\GlobalObserver.cpp" />
+    <ClCompile Include="Src\Application\PlayerInputConfig\PlayerInputConfig.cpp" />
+    <ClCompile Include="Src\Application\Resource\Prefab\PrefabController.cpp" />
+    <ClCompile Include="Src\Application\Resource\ResourceController.cpp" />
+    <ClCompile Include="Src\Application\Scene\BaseScene\BaseScene.cpp" />
+    <ClCompile Include="Src\Application\Scene\Changer\SceneChanger.cpp" />
+    <ClCompile Include="Src\Application\Scene\GameScene\GameScene.cpp" />
+    <ClCompile Include="Src\Application\Scene\SceneManager.cpp" />
+    <ClCompile Include="Src\Application\Scene\TitleScene\TitleScene.cpp" />
+    <ClCompile Include="Src\Application\Utility\ImGui\ImGuiUtility.cpp" />
+    <ClCompile Include="Src\Framework\Direct3D\KdMaterial.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Src\Framework\Direct3D\Polygon\KdPolygon.cpp" />
+    <ClCompile Include="Src\Framework\Direct3D\Polygon\KdSquarePolygon.cpp" />
+    <ClCompile Include="Src\Framework\Direct3D\Polygon\KdTrailPolygon.cpp" />
+    <ClCompile Include="Src\Framework\Effekseer\KdEffekseerManager.cpp" />
+    <ClCompile Include="Src\Framework\GameObject\KdGameObject.cpp" />
+    <ClCompile Include="Src\Framework\GameObject\KdGameObjectFactory.cpp" />
+    <ClCompile Include="Src\Framework\Input\KdInput.cpp" />
+    <ClCompile Include="Src\Framework\Math\KdCollider.cpp" />
+    <ClCompile Include="Src\Framework\Math\KdEasing.cpp" />
+    <ClCompile Include="Src\Framework\Audio\KdAudio.cpp" />
+    <ClCompile Include="Src\Framework\Direct3D\KdCamera.cpp" />
+    <ClCompile Include="src\Framework\Direct3D\KdDirect3D.cpp" />
+    <ClCompile Include="Src\Framework\Direct3D\KdGLTFLoader.cpp" />
+    <ClCompile Include="src\Framework\Direct3D\KdBuffer.cpp" />
+    <ClCompile Include="src\Framework\Direct3D\KdMesh.cpp" />
+    <ClCompile Include="Src\Framework\Direct3D\KdModel.cpp" />
+    <ClCompile Include="src\Framework\Direct3D\KdTexture.cpp" />
+    <ClCompile Include="Src\Framework\Math\KdUVAnimation.cpp" />
+    <ClCompile Include="Src\Framework\Shader\KdAmbientController.cpp" />
+    <ClCompile Include="Src\Framework\Shader\KdRenderTargetChange.cpp" />
+    <ClCompile Include="Src\Framework\Shader\StandardShader\KdStandardShader.cpp" />
+    <ClCompile Include="Src\Framework\Utility\Debug\KdDebugWireFrame.cpp" />
+    <ClCompile Include="Src\Framework\Utility\KdCSVData.cpp" />
+    <ClCompile Include="Src\Framework\Utility\KdDebugGUI.cpp" />
+    <ClCompile Include="Src\Framework\Utility\KdFPSController.cpp" />
+    <ClCompile Include="src\Pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Src\Framework\Math\KdAnimation.cpp" />
+    <ClCompile Include="Src\Framework\Math\KdCollision.cpp" />
+    <ClCompile Include="Src\Framework\Shader\KdShaderManager.cpp" />
+    <ClCompile Include="Src\Framework\Shader\PostProcessShader\KdPostProcessShader.cpp" />
+    <ClCompile Include="Src\Framework\Shader\SpriteShader\KdSpriteShader.cpp" />
+    <ClCompile Include="Src\Framework\Utility\KdUtility.cpp" />
+    <ClCompile Include="src\Framework\Window\KdWindow.cpp" />
+    <ClCompile Include="Src\System\FileSystem\FileSystem.cpp" />
+    <ClCompile Include="Src\System\ImGui\Config\PrefabRegistrationDataList\PrefabRegistrationDataListImGuiConfig.cpp" />
+    <ClCompile Include="Src\System\ImGui\Config\SceneView\SceneViewImGuiConfig.cpp" />
+    <ClCompile Include="Src\System\ImGui\ImGuiManager.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\BehaviorTree\BehaviorTreeImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\GUID\GUIDImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\Hierarchy\HierarchyImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\InputCheck\InputCheckImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\Inspector\Config\PrefabRegistrationDataList\PrefabRegistrationDataListInspectorImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\Inspector\PrefabData\PrefabDataInspectorImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\Inspector\PrefabData\PrefabSceneFilePathListInspectorImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\Inspector\SpawnData\SpawnDataInspectorImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\MenuBar\MenuBarImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\SceneView\SceneViewImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\ImGui\Window\TerrainCreate\TerrainCreateImGuiWindow.cpp" />
+    <ClCompile Include="Src\System\Input\RawInputManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Src\Framework\Shader\inc_KdCommon.hlsli" />
+    <None Include="Src\Framework\Shader\PostProcessShader\inc_KdPostProcessShader.hlsli" />
+    <None Include="Src\Framework\Shader\SpriteShader\inc_KdSpriteShader.hlsli" />
+    <None Include="Src\Framework\Shader\StandardShader\inc_KdStandardShader.hlsli" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Src\Framework\Shader\PostProcessShader\KdPostProcessShader_PS_Blur.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\PostProcessShader\KdPostProcessShader_PS_Bright.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\PostProcessShader\KdPostProcessShader_PS_DoF.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\PostProcessShader\KdPostProcessShader_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\SpriteShader\KdSpriteShader_PS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\SpriteShader\KdSpriteShader_VS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\StandardShader\KdStandardShader_PS_GenDepthMapFromLight.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\StandardShader\KdStandardShader_PS_Lit.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\StandardShader\KdStandardShader_PS_UnLit.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\StandardShader\KdStandardShader_VS_GenDepthMapFromLight.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\StandardShader\KdStandardShader_VS_Lit.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="Src\Framework\Shader\StandardShader\KdStandardShader_VS_UnLit.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
