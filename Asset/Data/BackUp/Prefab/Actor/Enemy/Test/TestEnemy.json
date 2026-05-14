@@ -1,0 +1,266 @@
+{
+    "CategoryType": 4,
+    "ComponentObserver": {
+        "EventList": []
+    },
+    "Components": [
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 1,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "InitCollisionEnabled": true,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.6000000238418579,
+                    "Z": 0.0
+                },
+                "Radius": 0.4000000059604645,
+                "ReceiveEventTypeID": "Unknown",
+                "UseFacingDirectionAxisFlags": 0
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 1,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "InitCollisionEnabled": true,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 1.399999976158142,
+                    "Z": 0.0
+                },
+                "Radius": 0.4000000059604645,
+                "ReceiveEventTypeID": "Unknown",
+                "UseFacingDirectionAxisFlags": 0
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 1,
+                "Direction": {
+                    "X": 0.0,
+                    "Y": -1.0,
+                    "Z": 0.0
+                },
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "InitCollisionEnabled": true,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.4000000059604645,
+                    "Z": 0.0
+                },
+                "Range": 0.4000000059604645,
+                "ReceiveEventTypeID": "Unknown",
+                "UseFacingDirectionAxisFlags": 0
+            },
+            "TypeName": "PhysicsCollisionRayComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                }
+            },
+            "TypeName": "PhysicsDebugWireComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "BlackBoard": {
+                    "SharedInfoList": [
+                        {
+                            "TypeName": "BTBlackBoardCalcVectorToTargetData"
+                        },
+                        {
+                            "Data": {
+                                "StartTargetGUID": 1,
+                                "TargetGUID": 1
+                            },
+                            "TypeName": "BTBlackBoardTargetTransformComponentCacheData"
+                        },
+                        {
+                            "TypeName": "BTBlackBoardCalcDistanceToTargetData"
+                        },
+                        {
+                            "TypeName": "BTBlackBoardFinishedRandomMoveData"
+                        }
+                    ]
+                },
+                "NodeRoot": {
+                    "ChildNode": {
+                        "ChildNodeList": [
+                            {
+                                "ChildNode": {
+                                    "NodeName": "BTNodeTaskAlwaysPassCalcVectorToTarget",
+                                    "NodePos": {
+                                        "X": -459.6068420410156,
+                                        "Y": 59.18275451660156
+                                    }
+                                },
+                                "ChildNodeName": "BTNodeTaskAlwaysPassCalcVectorToTarget"
+                            },
+                            {
+                                "ChildNode": {
+                                    "ChildNodeList": [
+                                        {
+                                            "ChildNode": {
+                                                "FalseNode": {
+                                                    "ClampMaxValue": 10.0,
+                                                    "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                                                    "KeyFrameList": [
+                                                        {
+                                                            "Tangent": 0.0,
+                                                            "Time": 0.0,
+                                                            "Value": 0.0
+                                                        },
+                                                        {
+                                                            "Tangent": 0.0,
+                                                            "Time": 0.0949999988079071,
+                                                            "Value": 3.8000006675720215
+                                                        }
+                                                    ],
+                                                    "MaxMeasurementTime": 0.0,
+                                                    "NodeName": "BTNodeTaskAlwaysPassMoveRunLockOn",
+                                                    "NodePos": {
+                                                        "X": 69.084228515625,
+                                                        "Y": 125.9783935546875
+                                                    }
+                                                },
+                                                "FalseNodeName": "BTNodeTaskAlwaysPassMoveRunLockOn",
+                                                "NodeName": "BTNodeWithinDistanceBranch",
+                                                "NodePos": {
+                                                    "X": -196.915771484375,
+                                                    "Y": 210.9783935546875
+                                                },
+                                                "ThresholdDistance": 10.0,
+                                                "TrueNode": {
+                                                    "ClampMaxValue": 10.0,
+                                                    "DirectionFixTime": 2.0,
+                                                    "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                                                    "KeyFrameList": [
+                                                        {
+                                                            "Tangent": 0.0,
+                                                            "Time": 0.0,
+                                                            "Value": 0.0
+                                                        },
+                                                        {
+                                                            "Tangent": 0.0,
+                                                            "Time": 0.04750002920627594,
+                                                            "Value": 1.4999988079071045
+                                                        }
+                                                    ],
+                                                    "MaxDirectionChangeCnt": 2,
+                                                    "MaxMeasurementTime": 0.0,
+                                                    "NodeName": "BTNodeTaskMoveRandomLockOn",
+                                                    "NodePos": {
+                                                        "X": 71.93115234375,
+                                                        "Y": 310.26434326171875
+                                                    }
+                                                },
+                                                "TrueNodeName": "BTNodeTaskMoveRandomLockOn"
+                                            },
+                                            "ChildNodeName": "BTNodeWithinDistanceBranch"
+                                        }
+                                    ],
+                                    "NodeName": "BTNodeCompositeSelector",
+                                    "NodePos": {
+                                        "X": -479.915771484375,
+                                        "Y": 263.9783935546875
+                                    }
+                                },
+                                "ChildNodeName": "BTNodeCompositeSelector"
+                            }
+                        ],
+                        "NodeName": "BTNodeCompositeSequence",
+                        "NodePos": {
+                            "X": -745.9157104492188,
+                            "Y": 250.9783935546875
+                        }
+                    },
+                    "ChildNodeName": "BTNodeCompositeSequence",
+                    "NodeName": "BTNodeRoot",
+                    "NodePos": {
+                        "X": -938.9157104492188,
+                        "Y": 313.9783935546875
+                    }
+                }
+            },
+            "TypeName": "BehaviorTreeComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AddGravityForce": 1.0,
+                "MaxAddGravityForce": 5.0
+            },
+            "TypeName": "PhysicsGravityComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AtkPow": 10.0,
+                "AtkStatusList": [],
+                "DefPow": 5.0,
+                "MaxHp": 30.0,
+                "NowHp": 7.5
+            },
+            "TypeName": "CombatComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StrategyName": "TransformStrategyCreateLocalSRT"
+            },
+            "TypeName": "TransformComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "CollisionType": 4
+            },
+            "TypeName": "PhysicsColliderComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AnimationClipList": [],
+                "AssetFilePath": "Asset\\Model\\Actor\\Enemy\\Test\\TropperMan.gltf",
+                "BoneTypeNameList": [],
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "DefaultAnimationClipName": "Unknown",
+                "DisableFrustumCulling": false,
+                "ShaderTypeFlags": 65,
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "RenderAnimationModelComponent"
+        }
+    ],
+    "PrefabName": "TestEnemy"
+}

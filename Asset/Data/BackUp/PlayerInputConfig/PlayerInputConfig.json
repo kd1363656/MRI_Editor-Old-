@@ -1,0 +1,34 @@
+{
+    "KeyConfigList": [
+        {
+            "Config": 1,
+            "VirtualKeyCode": 65
+        },
+        {
+            "Config": 2,
+            "VirtualKeyCode": 68
+        },
+        {
+            "Config": 3,
+            "VirtualKeyCode": 87
+        },
+        {
+            "Config": 4,
+            "VirtualKeyCode": 83
+        }
+    ],
+    "MouseConfigList": [
+        {
+            "Config": 0,
+            "VirtualKeyCode": 1
+        },
+        {
+            "Config": 1,
+            "VirtualKeyCode": 2
+        },
+        {
+            "Config": 2,
+            "VirtualKeyCode": 4
+        }
+    ]
+}

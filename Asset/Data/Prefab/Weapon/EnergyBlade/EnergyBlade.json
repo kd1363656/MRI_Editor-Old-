@@ -1,0 +1,13 @@
+{
+    "CategoryType": 1024,
+    "Components": [
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StrategyName": "TransformStrategyCreateLocalSTRParentSRT"
+            },
+            "TypeName": "TransformComponent"
+        }
+    ],
+    "PrefabName": "EnergyBlade"
+}

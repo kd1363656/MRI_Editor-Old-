@@ -1,0 +1,77 @@
+{
+    "CategoryType": 4,
+    "ComponentObserver": {
+        "EventList": []
+    },
+    "Components": [
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StrategyName": "TransformStrategyCreateLocalSRT"
+            },
+            "TypeName": "TransformComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AtkPow": 10.0,
+                "AtkStatusList": [],
+                "DefPow": 5.0,
+                "MaxHp": 30.0,
+                "NowHp": 30.0
+            },
+            "TypeName": "CombatComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AddMoveSpeed": 1.0,
+                "InitMoveSpeed": 1.0,
+                "MaxMoveSpeed": 3.0,
+                "StartTargetGUID": 1,
+                "TargetGUID": 1
+            },
+            "TypeName": "MoveAILockOnTargetComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AnimationDataList": [],
+                "AssetFilePath": "Asset\\Model\\Actor\\Enemy\\Test\\TropperMan.gltf",
+                "BoneTypeNameList": [],
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "DefaultAnimationName": "Unknown",
+                "DisableFrustumCulling": false,
+                "ShaderTypeFlags": 1,
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "RenderModelAnimationComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                }
+            },
+            "TypeName": "PhysicsCollisionDebugWireComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "CollisionType": 4
+            },
+            "TypeName": "PhysicsColliderComponent"
+        }
+    ],
+    "PrefabName": "TestEnemy"
+}

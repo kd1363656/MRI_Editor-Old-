@@ -1,0 +1,31 @@
+{
+    "CategoryType": 1024,
+    "Components": [
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AssetFilePath": "Asset\\Model\\Weapon\\EnergyBlade\\EnergyBlade.gltf",
+                "BoneTypeNameList": [],
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "DisableFrustumCulling": false,
+                "ShaderTypeFlags": 2,
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "RenderModelStaticComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StrategyName": "TransformStrategyCreateLocalSTRParentSRT"
+            },
+            "TypeName": "TransformComponent"
+        }
+    ],
+    "PrefabName": "EnergyBlade"
+}

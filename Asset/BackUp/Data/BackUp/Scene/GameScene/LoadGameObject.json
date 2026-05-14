@@ -1,0 +1,301 @@
+[
+    {
+        "CategoryType": 2,
+        "Children": [
+            {
+                "CategoryType": 1,
+                "Children": [],
+                "Components": [
+                    {
+                        "IsAllowMulti": false,
+                        "TypeName": "SpringArmComponent"
+                    },
+                    {
+                        "IsAllowMulti": false,
+                        "SpawnData": {
+                            "FieldOfView": 60.0
+                        },
+                        "TypeName": "CameraComponent"
+                    },
+                    {
+                        "IsAllowMulti": false,
+                        "SpawnData": {
+                            "Pos": {
+                                "X": 0.0,
+                                "Y": 1.0,
+                                "Z": -2.0
+                            },
+                            "Rotation": {
+                                "W": -0.6537726521492004,
+                                "X": -0.0513753667473793,
+                                "Y": 0.7526212930679321,
+                                "Z": -0.05918938294053078
+                            },
+                            "Scale": {
+                                "X": 1.0,
+                                "Y": 1.0,
+                                "Z": 1.0
+                            },
+                            "StrategyName": "TransformStrategyCreateLocalSTRParentSRT"
+                        },
+                        "TypeName": "TransformComponent"
+                    },
+                    {
+                        "IsAllowMulti": false,
+                        "TypeName": "RotationInputMouseComponent"
+                    }
+                ],
+                "GUID": 2,
+                "PrefabName": "TPVCamera"
+            },
+            {
+                "CategoryType": 1024,
+                "Children": [],
+                "Components": [
+                    {
+                        "IsAllowMulti": false,
+                        "SpawnData": {
+                            "StartTargetGUID": 2,
+                            "TargetGUID": 2
+                        },
+                        "TypeName": "RenderModelStaticComponent"
+                    },
+                    {
+                        "IsAllowMulti": false,
+                        "SpawnData": {
+                            "Pos": {
+                                "X": 0.6000000238418579,
+                                "Y": 1.0,
+                                "Z": 0.10000000149011612
+                            },
+                            "Rotation": {
+                                "W": 1.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Z": 0.0
+                            },
+                            "Scale": {
+                                "X": 1.0,
+                                "Y": 1.0,
+                                "Z": 1.0
+                            },
+                            "StrategyName": "TransformStrategyCreateLocalSTRParentSRT"
+                        },
+                        "TypeName": "TransformComponent"
+                    }
+                ],
+                "GUID": 6,
+                "PrefabName": "EnergyBlade"
+            }
+        ],
+        "Components": [
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionRayComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "Pos": {
+                        "X": 6.005283355712891,
+                        "Y": -0.9000006914138794,
+                        "Z": 9.25853157043457
+                    },
+                    "Rotation": {
+                        "W": 0.6557915806770325,
+                        "X": -0.0,
+                        "Y": -0.754941999912262,
+                        "Z": -0.0
+                    },
+                    "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                    },
+                    "StrategyName": "TransformStrategyCreateLocalSRT"
+                },
+                "TypeName": "TransformComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsGravityComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RenderModelAnimationComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsCollisionDebugWireComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsColliderComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "InputPlayerComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RotationInputSmoothBasedOnTargetComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "MoveInputBasedOnTargetComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "CombatComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RotationInputInstantBasedOnTargetComponent"
+            }
+        ],
+        "GUID": 1,
+        "PrefabName": "RGray"
+    },
+    {
+        "CategoryType": 16,
+        "Children": [],
+        "Components": [
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "Pos": {
+                        "X": 2.799999952316284,
+                        "Y": -0.8999999761581421,
+                        "Z": 0.0
+                    },
+                    "Rotation": {
+                        "W": 1.0,
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                    },
+                    "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                    },
+                    "StrategyName": "TransformStrategyCreateLocalSRT"
+                },
+                "TypeName": "TransformComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsColliderComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RenderModelStaticComponent"
+            }
+        ],
+        "GUID": 3,
+        "PrefabName": "Grass_1"
+    },
+    {
+        "CategoryType": 4,
+        "Children": [],
+        "Components": [
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "Pos": {
+                        "X": 1.564133882522583,
+                        "Y": -0.8999999761581421,
+                        "Z": 8.296558380126953
+                    },
+                    "Rotation": {
+                        "W": 0.105499267578125,
+                        "X": -0.0,
+                        "Y": -0.9944193959236145,
+                        "Z": 0.0
+                    },
+                    "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                    },
+                    "StrategyName": "TransformStrategyCreateLocalSRT"
+                },
+                "TypeName": "TransformComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "CombatComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 1,
+                    "TargetGUID": 1
+                },
+                "TypeName": "MoveAILockOnTargetComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RenderModelAnimationComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsCollisionDebugWireComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsColliderComponent"
+            }
+        ],
+        "GUID": 8,
+        "PrefabName": "TestEnemy"
+    }
+]

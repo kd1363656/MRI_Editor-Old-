@@ -1,0 +1,359 @@
+[
+    {
+        "CategoryType": 2,
+        "Children": [
+            {
+                "CategoryType": 1,
+                "Children": [],
+                "Components": [
+                    {
+                        "IsAllowMulti": false,
+                        "SpawnData": {
+                            "FieldOfView": 60.0
+                        },
+                        "TypeName": "CameraComponent"
+                    },
+                    {
+                        "IsAllowMulti": false,
+                        "TypeName": "SpringArmComponent"
+                    },
+                    {
+                        "IsAllowMulti": false,
+                        "SpawnData": {
+                            "Pos": {
+                                "X": 0.0,
+                                "Y": 1.0,
+                                "Z": -2.0
+                            },
+                            "Rotation": {
+                                "W": -0.9998764991760254,
+                                "X": -0.010471967048943043,
+                                "Y": -0.011647332459688187,
+                                "Z": 0.0012199507327750325
+                            },
+                            "Scale": {
+                                "X": 1.0,
+                                "Y": 1.0,
+                                "Z": 1.0
+                            },
+                            "StrategyName": "TransformStrategyCreateLocalSTRParentSRT"
+                        },
+                        "TypeName": "TransformComponent"
+                    },
+                    {
+                        "IsAllowMulti": false,
+                        "TypeName": "RotationInputMouseComponent"
+                    }
+                ],
+                "GUID": 2,
+                "PrefabName": "TPVCamera"
+            },
+            {
+                "CategoryType": 1024,
+                "Children": [],
+                "Components": [
+                    {
+                        "IsAllowMulti": false,
+                        "SpawnData": {
+                            "Pos": {
+                                "X": 0.6000000238418579,
+                                "Y": 1.0,
+                                "Z": 0.10000000149011612
+                            },
+                            "Rotation": {
+                                "W": 1.0,
+                                "X": 0.0,
+                                "Y": 0.0,
+                                "Z": 0.0
+                            },
+                            "Scale": {
+                                "X": 1.0,
+                                "Y": 1.0,
+                                "Z": 1.0
+                            },
+                            "StrategyName": "TransformStrategyCreateLocalSTRParentSRT"
+                        },
+                        "TypeName": "TransformComponent"
+                    }
+                ],
+                "GUID": 6,
+                "PrefabName": "EnergyBlade"
+            }
+        ],
+        "Components": [
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionRayComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "Pos": {
+                        "X": -18.564598083496094,
+                        "Y": 2.8477680683135986,
+                        "Z": 27.10340690612793
+                    },
+                    "Rotation": {
+                        "W": -0.07278434187173843,
+                        "X": 0.0,
+                        "Y": 0.9973477721214294,
+                        "Z": 0.0
+                    },
+                    "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                    },
+                    "StrategyName": "TransformStrategyCreateLocalSRT"
+                },
+                "TypeName": "TransformComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsGravityComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsDebugWireComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RenderAnimationModelComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsColliderComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "InputPlayerComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RotationInputBasedOnTargetSmoothComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "MoveInputBasedOnTargetComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "CombatComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RotationInputBasedOnTargetInstantComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "MoveInputActionComponent"
+            }
+        ],
+        "GUID": 1,
+        "PrefabName": "RGray"
+    },
+    {
+        "CategoryType": 16,
+        "Children": [],
+        "Components": [
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "Pos": {
+                        "X": 2.799999952316284,
+                        "Y": -0.8999999761581421,
+                        "Z": 0.0
+                    },
+                    "Rotation": {
+                        "W": 1.0,
+                        "X": 0.0,
+                        "Y": 0.0,
+                        "Z": 0.0
+                    },
+                    "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                    },
+                    "StrategyName": "TransformStrategyCreateLocalSRT"
+                },
+                "TypeName": "TransformComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RenderStaticModelComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsColliderComponent"
+            }
+        ],
+        "GUID": 3,
+        "PrefabName": "Grass_1"
+    },
+    {
+        "CategoryType": 4,
+        "Children": [],
+        "Components": [
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionSphereComponent"
+            },
+            {
+                "IsAllowMulti": true,
+                "TypeName": "PhysicsCollisionRayComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "Pos": {
+                        "X": -18.76848793029785,
+                        "Y": 2.8477680683135986,
+                        "Z": 26.50901985168457
+                    },
+                    "Rotation": {
+                        "W": 0.8197391629219055,
+                        "X": 0.0,
+                        "Y": -0.5727392435073853,
+                        "Z": 0.0
+                    },
+                    "Scale": {
+                        "X": 1.0,
+                        "Y": 1.0,
+                        "Z": 1.0
+                    },
+                    "StrategyName": "TransformStrategyCreateLocalSRT"
+                },
+                "TypeName": "TransformComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "CombatComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsGravityComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "BlackBoard": {
+                        "SharedInfoList": [
+                            {
+                                "TypeName": "BTBlackBoardCalcVectorToTargetData"
+                            },
+                            {
+                                "Data": {
+                                    "StartTargetGUID": 1,
+                                    "TargetGUID": 1
+                                },
+                                "TypeName": "BTBlackBoardTargetTransformComponentCacheData"
+                            },
+                            {
+                                "TypeName": "BTBlackBoardCalcDistanceToTargetData"
+                            }
+                        ]
+                    },
+                    "NodeRoot": {
+                        "ChildNode": {
+                            "ChildNodeList": [
+                                {
+                                    "ChildNode": {
+                                        "GUID": 8
+                                    }
+                                },
+                                {
+                                    "ChildNode": {
+                                        "ChildNodeList": [
+                                            {
+                                                "ChildNode": {
+                                                    "FalseNode": {
+                                                        "GUID": 15
+                                                    },
+                                                    "GUID": 13,
+                                                    "TrueNode": {
+                                                        "GUID": 16
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "GUID": 10
+                                    }
+                                }
+                            ],
+                            "GUID": 2
+                        },
+                        "GUID": 1
+                    }
+                },
+                "TypeName": "BehaviorTreeComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsDebugWireComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "TypeName": "PhysicsColliderComponent"
+            },
+            {
+                "IsAllowMulti": false,
+                "SpawnData": {
+                    "StartTargetGUID": 2,
+                    "TargetGUID": 2
+                },
+                "TypeName": "RenderAnimationModelComponent"
+            }
+        ],
+        "GUID": 8,
+        "PrefabName": "TestEnemy"
+    }
+]

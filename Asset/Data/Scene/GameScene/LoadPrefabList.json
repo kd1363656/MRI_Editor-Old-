@@ -1,0 +1,24 @@
+{
+    "PrefabFilePathList": [
+        {
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Actor\\Player\\RGray\\RGray.json",
+            "PrefabName": "RGray"
+        },
+        {
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Camera\\TPV\\TPVCamer.json",
+            "PrefabName": "TPVCamera"
+        },
+        {
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Map\\Terrain\\Test\\Test.json",
+            "PrefabName": "Grass_1"
+        },
+        {
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Weapon\\EnergyBlade\\EnergyBlade.json",
+            "PrefabName": "EnergyBlade"
+        },
+        {
+            "PrefabFilePath": "Asset\\Data\\Prefab\\Actor\\Enemy\\Test\\TestEnemy.json",
+            "PrefabName": "TestEnemy"
+        }
+    ]
+}

@@ -1,0 +1,670 @@
+{
+    "CategoryType": 2,
+    "ComponentObserver": {
+        "EventList": [
+            {
+                "EventTagName": "RotationInputInstantBasedOnTargetActiveTag"
+            },
+            {
+                "EventTagName": "AtkComboThirdActiveTag"
+            },
+            {
+                "EventTagName": "AtkComboStartActiveTag"
+            },
+            {
+                "EventTagName": "AtkComboFirstActiveTag"
+            },
+            {
+                "EventTagName": "AtkComboSecondActiveTag"
+            },
+            {
+                "EventTagName": "RotationInputSmoothBasedOnTargetActiveTag"
+            },
+            {
+                "EventTagName": "AtkComboFourthActiveTag"
+            },
+            {
+                "EventTagName": "MoveInputBasedOnTargetActiveTag"
+            },
+            {
+                "EventTagName": "MoveInputAtkComboFirstActiveTag"
+            },
+            {
+                "EventTagName": "MoveInputAtkComboSecondActiveTag"
+            },
+            {
+                "EventTagName": "MoveInputAtkComboThirdActiveTag"
+            },
+            {
+                "EventTagName": "MoveInputAtkComboFourthActiveTag"
+            }
+        ]
+    },
+    "Components": [
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 1,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "InitCollisionEnabled": true,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 1.100000023841858,
+                    "Z": 0.0
+                },
+                "Radius": 0.3499999940395355,
+                "ReceiveEventTypeID": "Unknown",
+                "UseFacingDirectionAxisFlags": 0
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 1,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "InitCollisionEnabled": true,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.4000000059604645,
+                    "Z": 0.0
+                },
+                "Radius": 0.3499999940395355,
+                "ReceiveEventTypeID": "Unknown",
+                "UseFacingDirectionAxisFlags": 0
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 4,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 0.7200000286102295
+                },
+                "InitCollisionEnabled": false,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.800000011920929,
+                    "Z": 0.0
+                },
+                "Radius": 0.6000000238418579,
+                "ReceiveEventTypeID": "AtkComboFirstActiveTag",
+                "UseFacingDirectionAxisFlags": 5
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 4,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 0.7200000286102295
+                },
+                "InitCollisionEnabled": false,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.800000011920929,
+                    "Z": 0.0
+                },
+                "Radius": 0.6000000238418579,
+                "ReceiveEventTypeID": "AtkComboSecondActiveTag",
+                "UseFacingDirectionAxisFlags": 5
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 4,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 0.7200000286102295
+                },
+                "InitCollisionEnabled": false,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.800000011920929,
+                    "Z": 0.0
+                },
+                "Radius": 0.6000000238418579,
+                "ReceiveEventTypeID": "AtkComboThirdActiveTag",
+                "UseFacingDirectionAxisFlags": 5
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 4,
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 0.7200000286102295
+                },
+                "InitCollisionEnabled": false,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.800000011920929,
+                    "Z": 0.0
+                },
+                "Radius": 0.6000000238418579,
+                "ReceiveEventTypeID": "AtkComboFourthActiveTag",
+                "UseFacingDirectionAxisFlags": 5
+            },
+            "TypeName": "PhysicsCollisionSphereComponent"
+        },
+        {
+            "IsAllowMulti": true,
+            "PrefabData": {
+                "CollisionTypeFlags": 1,
+                "Direction": {
+                    "X": 0.0,
+                    "Y": -1.0,
+                    "Z": 0.0
+                },
+                "FacingDirectionOffsetMagnification": {
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "InitCollisionEnabled": true,
+                "Offset": {
+                    "X": 0.0,
+                    "Y": 0.30000001192092896,
+                    "Z": 0.0
+                },
+                "Range": 0.30000001192092896,
+                "ReceiveEventTypeID": "Unknown",
+                "UseFacingDirectionAxisFlags": 0
+            },
+            "TypeName": "PhysicsCollisionRayComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StrategyName": "TransformStrategyCreateLocalSRT"
+            },
+            "TypeName": "TransformComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AddGravityForce": 1.0,
+                "MaxAddGravityForce": 5.0
+            },
+            "TypeName": "PhysicsGravityComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                }
+            },
+            "TypeName": "PhysicsDebugWireComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AnimationDataList": [
+                    {
+                        "AnimationName": "idle_0",
+                        "AnimationNotifyToComponentList": [],
+                        "AnimationTransitionList": [
+                            {
+                                "EventLane": 1,
+                                "EventTagName": "AtkComboFirstActiveTag",
+                                "IsWaitForEnd": false,
+                                "NotifyFlag": 1,
+                                "Priority": 1,
+                                "TargetAnimationName": "Combo01_1",
+                                "TriggerTime": 0.0
+                            },
+                            {
+                                "EventLane": 2,
+                                "EventTagName": "MoveInputBasedOnTargetActiveTag",
+                                "IsWaitForEnd": false,
+                                "NotifyFlag": 1,
+                                "Priority": 2,
+                                "TargetAnimationName": "Move_Run_Front_0",
+                                "TriggerTime": 0.0
+                            }
+                        ],
+                        "IsLoop": true,
+                        "PlaySpeed": 25.0
+                    },
+                    {
+                        "AnimationName": "Combo01_1",
+                        "AnimationNotifyToComponentList": [
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 60.0,
+                                "NotifyFlag": 1,
+                                "TagName": "AtkComboFirstActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 60.0,
+                                "NotifyFlag": 2,
+                                "TagName": "MoveInputBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 60.0,
+                                "NotifyFlag": 2,
+                                "TagName": "RotationInputSmoothBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 1.5,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 13.0,
+                                "NotifyFlag": 1,
+                                "TagName": "MoveInputAtkComboFirstActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.8999999761581421,
+                                "ClassName": "MomentNotifyToComponent",
+                                "TagName": "RotationInputInstantBasedOnTargetActiveTag"
+                            }
+                        ],
+                        "AnimationTransitionList": [
+                            {
+                                "EventLane": 1,
+                                "EventTagName": "AtkComboSecondActiveTag",
+                                "IsWaitForEnd": true,
+                                "NotifyFlag": 1,
+                                "Priority": 1,
+                                "TargetAnimationName": "Combo01_2",
+                                "TriggerTime": 29.5
+                            },
+                            {
+                                "EventLane": 0,
+                                "EventTagName": "Unknown",
+                                "IsWaitForEnd": false,
+                                "NotifyFlag": 2,
+                                "Priority": 0,
+                                "TargetAnimationName": "Unknown",
+                                "TriggerTime": 0.0
+                            }
+                        ],
+                        "IsLoop": false,
+                        "PlaySpeed": 63.0
+                    },
+                    {
+                        "AnimationName": "Combo01_2",
+                        "AnimationNotifyToComponentList": [
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 80.0,
+                                "NotifyFlag": 1,
+                                "TagName": "AtkComboSecondActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 80.0,
+                                "NotifyFlag": 2,
+                                "TagName": "MoveInputBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 80.0,
+                                "NotifyFlag": 2,
+                                "TagName": "RotationInputSmoothBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 10.5,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 22.700000762939453,
+                                "NotifyFlag": 1,
+                                "TagName": "MoveInputAtkComboSecondActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "MomentNotifyToComponent",
+                                "TagName": "RotationInputInstantBasedOnTargetActiveTag"
+                            }
+                        ],
+                        "AnimationTransitionList": [
+                            {
+                                "EventLane": 1,
+                                "EventTagName": "AtkComboThirdActiveTag",
+                                "IsWaitForEnd": true,
+                                "NotifyFlag": 1,
+                                "Priority": 1,
+                                "TargetAnimationName": "Combo01_3",
+                                "TriggerTime": 38.400001525878906
+                            }
+                        ],
+                        "IsLoop": false,
+                        "PlaySpeed": 73.0
+                    },
+                    {
+                        "AnimationName": "Combo01_3",
+                        "AnimationNotifyToComponentList": [
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 97.5,
+                                "NotifyFlag": 1,
+                                "TagName": "AtkComboThirdActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 97.5,
+                                "NotifyFlag": 2,
+                                "TagName": "MoveInputBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 97.5,
+                                "NotifyFlag": 2,
+                                "TagName": "RotationInputSmoothBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 30.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 53.099998474121094,
+                                "NotifyFlag": 1,
+                                "TagName": "MoveInputAtkComboThirdActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "MomentNotifyToComponent",
+                                "TagName": "RotationInputInstantBasedOnTargetActiveTag"
+                            }
+                        ],
+                        "AnimationTransitionList": [
+                            {
+                                "EventLane": 1,
+                                "EventTagName": "AtkComboFourthActiveTag",
+                                "IsWaitForEnd": true,
+                                "NotifyFlag": 1,
+                                "Priority": 1,
+                                "TargetAnimationName": "Combo01_4",
+                                "TriggerTime": 40.79999923706055
+                            }
+                        ],
+                        "IsLoop": false,
+                        "PlaySpeed": 89.0
+                    },
+                    {
+                        "AnimationName": "Combo01_4",
+                        "AnimationNotifyToComponentList": [
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 124.99999237060547,
+                                "NotifyFlag": 1,
+                                "TagName": "AtkComboFourthActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 124.99999237060547,
+                                "NotifyFlag": 2,
+                                "TagName": "MoveInputBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 124.99999237060547,
+                                "NotifyFlag": 2,
+                                "TagName": "RotationInputSmoothBasedOnTargetActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "KeepNotifyToComponent",
+                                "EndNotifyTime": 50.599998474121094,
+                                "NotifyFlag": 1,
+                                "TagName": "MoveInputAtkComboFourthActiveTag"
+                            },
+                            {
+                                "BeginNotifyTime": 0.0,
+                                "ClassName": "MomentNotifyToComponent",
+                                "TagName": "RotationInputInstantBasedOnTargetActiveTag"
+                            }
+                        ],
+                        "AnimationTransitionList": [],
+                        "IsLoop": false,
+                        "PlaySpeed": 60.0
+                    },
+                    {
+                        "AnimationName": "Move_Run_Front_0",
+                        "AnimationNotifyToComponentList": [],
+                        "AnimationTransitionList": [
+                            {
+                                "EventLane": 1,
+                                "EventTagName": "AtkComboFirstActiveTag",
+                                "IsWaitForEnd": false,
+                                "NotifyFlag": 1,
+                                "Priority": 1,
+                                "TargetAnimationName": "Combo01_1",
+                                "TriggerTime": 0.0
+                            },
+                            {
+                                "EventLane": 2,
+                                "EventTagName": "MoveInputBasedOnTargetActiveTag",
+                                "IsWaitForEnd": false,
+                                "NotifyFlag": 2,
+                                "Priority": 2,
+                                "TargetAnimationName": "idle_0",
+                                "TriggerTime": 0.0
+                            }
+                        ],
+                        "IsLoop": true,
+                        "PlaySpeed": 60.0
+                    }
+                ],
+                "AssetFilePath": "Asset\\Model\\Actor\\RGrey\\RGray.gltf",
+                "BoneTypeNameList": [],
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "DefaultAnimationName": "idle_0",
+                "DisableFrustumCulling": false,
+                "ShaderTypeFlags": 192,
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "RenderAnimationModelComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "CollisionType": 0
+            },
+            "TypeName": "PhysicsColliderComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "TypeName": "InputPlayerComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                "KeyFrameList": [
+                    {
+                        "Tangent": 0.0,
+                        "Time": 0.0,
+                        "Value": 7.999999523162842
+                    },
+                    {
+                        "Tangent": 0.0,
+                        "Time": 1.0,
+                        "Value": 7.999999523162842
+                    }
+                ],
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "RotationInputBasedOnTargetSmoothComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                "KeyFrameList": [
+                    {
+                        "Tangent": 0.0,
+                        "Time": 0.004999998025596142,
+                        "Value": 0.6000008583068848
+                    },
+                    {
+                        "Tangent": 4.866000175476074,
+                        "Time": 0.1774999052286148,
+                        "Value": 7.100000381469727
+                    }
+                ],
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "MoveInputBasedOnTargetComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AtkPow": 10.0,
+                "AtkStatusList": [
+                    {
+                        "AtkType": 0,
+                        "Multiplier": 1.0
+                    }
+                ],
+                "DefPow": 6.0,
+                "MaxHp": 300.0,
+                "NowHp": 300.0
+            },
+            "TypeName": "CombatComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "RotationInputBasedOnTargetInstantComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "MoveActionDataList": [
+                    {
+                        "AssignedMoveDirection": {
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": -1.0
+                        },
+                        "EventTagName": "MoveInputAtkComboFirstActiveTag",
+                        "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                        "KeyFrameList": [
+                            {
+                                "Tangent": 10.0,
+                                "Time": 0.0024999999441206455,
+                                "Value": 6.109476089477539e-07
+                            },
+                            {
+                                "Tangent": 0.0,
+                                "Time": 0.044999998062849045,
+                                "Value": 7.000003814697266
+                            }
+                        ]
+                    },
+                    {
+                        "AssignedMoveDirection": {
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": -1.0
+                        },
+                        "EventTagName": "MoveInputAtkComboSecondActiveTag",
+                        "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                        "KeyFrameList": [
+                            {
+                                "Tangent": 10.0,
+                                "Time": 0.0,
+                                "Value": 0.0
+                            },
+                            {
+                                "Tangent": 0.0,
+                                "Time": 0.04500005766749382,
+                                "Value": 8.099997520446777
+                            }
+                        ]
+                    },
+                    {
+                        "AssignedMoveDirection": {
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": -1.0
+                        },
+                        "EventTagName": "MoveInputAtkComboThirdActiveTag",
+                        "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                        "KeyFrameList": [
+                            {
+                                "Tangent": 0.0,
+                                "Time": 0.0,
+                                "Value": 0.0
+                            },
+                            {
+                                "Tangent": 0.0,
+                                "Time": 0.05250067263841629,
+                                "Value": 6.599999904632568
+                            }
+                        ]
+                    },
+                    {
+                        "AssignedMoveDirection": {
+                            "X": 0.0,
+                            "Y": 0.0,
+                            "Z": -1.0
+                        },
+                        "EventTagName": "MoveInputAtkComboFourthActiveTag",
+                        "InterpolatorModifierName": "HermiteInterpolatorModifier",
+                        "KeyFrameList": [
+                            {
+                                "Tangent": 1.9509999752044678,
+                                "Time": 0.0,
+                                "Value": 0.0
+                            },
+                            {
+                                "Tangent": 0.0,
+                                "Time": 0.197500079870224,
+                                "Value": 9.700003623962402
+                            }
+                        ]
+                    }
+                ]
+            },
+            "TypeName": "MoveInputActionComponent"
+        }
+    ],
+    "PrefabName": "RGray"
+}

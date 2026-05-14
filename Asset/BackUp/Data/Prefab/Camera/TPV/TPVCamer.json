@@ -1,0 +1,40 @@
+{
+    "CategoryType": 1,
+    "Components": [
+        {
+            "IsAllowMulti": false,
+            "TypeName": "CameraComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "BumpMagnification": 0.4000000059604645,
+                "CollisionType": 1,
+                "SpringSpeed": 5.0,
+                "StandardOffsetPos": {
+                    "X": 0.0,
+                    "Y": 1.0,
+                    "Z": -2.0
+                }
+            },
+            "TypeName": "SpringArmComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StrategyName": "TransformStrategyCreateLocalSTRParentSRT"
+            },
+            "TypeName": "TransformComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "MaxRotatableDegreeX": 45.0,
+                "MaxRotationSpeed": 4.0,
+                "MinRotatableDegreeX": -45.0
+            },
+            "TypeName": "RotationInputMouseComponent"
+        }
+    ],
+    "PrefabName": "TPVCamera"
+}

@@ -1,0 +1,41 @@
+{
+    "CategoryType": 16,
+    "ComponentObserver": {
+        "EventList": []
+    },
+    "Components": [
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "StrategyName": "TransformStrategyCreateLocalSRT"
+            },
+            "TypeName": "TransformComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "AssetFilePath": "Asset\\Model\\Map\\Stage\\StageMap.gltf",
+                "BoneTypeNameList": [],
+                "Color": {
+                    "W": 1.0,
+                    "X": 1.0,
+                    "Y": 1.0,
+                    "Z": 1.0
+                },
+                "DisableFrustumCulling": false,
+                "ShaderTypeFlags": 1,
+                "StartTargetGUID": 2,
+                "TargetGUID": 2
+            },
+            "TypeName": "RenderStaticModelComponent"
+        },
+        {
+            "IsAllowMulti": false,
+            "PrefabData": {
+                "CollisionType": 129
+            },
+            "TypeName": "PhysicsColliderComponent"
+        }
+    ],
+    "PrefabName": "Grass_1"
+}
